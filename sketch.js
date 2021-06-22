@@ -2,9 +2,11 @@ let facemesh;
 let video;
 let predictions = [];
 let emitter;
+let docWidth = document.clientWidth;
+let docHeight = document.clientHeight;
 
 function setup() {
-	createCanvas(width, height);
+	createCanvas(docWidth, docHeight);
 	video = createCapture(VIDEO);
 	video.size(335, 667);
 
