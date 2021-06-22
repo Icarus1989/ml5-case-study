@@ -4,7 +4,7 @@ let predictions = [];
 let emitter;
 
 function setup() {
-	createCanvas(640, 480);
+	createCanvas(width, height);
 	video = createCapture(VIDEO);
 	video.size(width, height);
 
