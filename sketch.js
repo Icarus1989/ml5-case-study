@@ -6,9 +6,9 @@ let docWidth = document.clientWidth;
 let docHeight = document.clientHeight;
 
 function setup() {
-	createCanvas(width, height);
+	createCanvas(960, 1280);
 	video = createCapture(VIDEO);
-	video.size(width, height);
+	video.size(960, 1280);
 
 	emitter = new Emitter(width / 2, height / 2);
 
