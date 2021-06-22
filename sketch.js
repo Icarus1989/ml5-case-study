@@ -6,7 +6,7 @@ let emitter;
 function setup() {
 	createCanvas(width, height);
 	video = createCapture(VIDEO);
-	video.size(windowWidth, windowHeight);
+	video.size(335, 667);
 
 	emitter = new Emitter(width / 2, height / 2);
 
