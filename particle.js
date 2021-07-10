@@ -36,18 +36,19 @@ class Particle {
     this.pos.add(this.vel);
     this.acc.set(0, 0);
 
-    this.lifetime -= 50;
+    this.lifetime -= 60;
   }
 
   show() {
     // stroke(this.lifetime * 0.1, this.lifetime * 0.1, this.lifetime);
     // strokeWeight(2);
     noStroke();
-    fill(this.lifetime * 0.2, this.lifetime * 0.2, this.lifetime);
+    fill(250, 250, 255, this.lifetime * 0.5);
 
 
-    rect(this.pos.x - 10, this.pos.y, 20, 2);
-    // ellipse(this.pos.x, this.pos.y, this.r * 2);
+    rect(this.pos.x, this.pos.y, 1, 10);
+    rect(this.pos.x - 5, this.pos.y + 5, 10, 1);
+    ellipse(this.pos.x, this.pos.y + 5, this.r * 1);
   }
 }
 
